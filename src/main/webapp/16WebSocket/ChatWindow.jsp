@@ -58,7 +58,7 @@
 		    var content = message[1];  // 메시지 내용
 		    if (content != "") {
 		        if (content.match("/")) {  // 귓속말
-		            if (content.match(("/" + chatId))) {  // 나에게 보낸 메시지만 출력
+		            if (content.match(("/" + chatId))) {
 		                var temp = content.replace(("/" + chatId), "[귓속말] : ");
 		                chatWindow.innerHTML += "<div>" + sender + "" + temp + "</div>";
 		            }
